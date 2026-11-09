@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mercy Retail Shoppers – Tororo</title>
+<meta name="description" content="Mercy Retail Shoppers in Bison village, Western Division, Tororo District. Merchandise of all kinds and mobile money services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --surface:#f1f4f1; --ink:#17201f; --muted:#506059; --line:#d6ddd8;
+  --brand:#0f4c4a; --brand-text:#0f4c4a; --sun:#f4b400; --sign-ink:#12302e;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#101615; --surface:#19211f; --ink:#eef2f0; --muted:#a6b2ae; --line:#2b3633; --brand-text:#6fd0c9;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#101615; --surface:#19211f; --ink:#eef2f0; --muted:#a6b2ae; --line:#2b3633; --brand-text:#6fd0c9;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:1.05rem;line-height:1.6}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.05;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brand-text);outline-offset:3px}
+
+.sign{background:var(--sun);color:var(--sign-ink);padding:clamp(2.5rem,9vw,5.5rem) 1.25rem clamp(2rem,6vw,3.5rem);border-bottom:10px solid var(--brand)}
+.wrap{max-width:62rem;margin:0 auto}
+.sign h1{font-weight:800;font-size:clamp(3rem,15vw,8.5rem);letter-spacing:-.03em}
+.sign .where{margin:1.25rem 0 0;font-size:1.15rem;font-weight:600;max-width:32rem}
+.sign .promise{margin:.5rem 0 0;max-width:32rem}
+.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.75rem}
+.btn{display:inline-block;padding:.85rem 1.35rem;border-radius:.4rem;font-weight:600;text-decoration:none;border:2px solid var(--brand);background:var(--brand);color:#fff}
+.btn.alt{background:transparent;color:var(--sign-ink);border-color:var(--sign-ink)}
+.note{margin:.9rem 0 0;font-size:.95rem}
+
+section{padding:clamp(2.5rem,7vw,4.5rem) 1.25rem}
+section h2{font-weight:800;font-size:clamp(1.9rem,6vw,3rem);letter-spacing:-.02em;margin-bottom:1.5rem}
+.two{display:grid;gap:1.25rem}
+@media(min-width:44rem){.two{grid-template-columns:1.2fr 1fr}}
+.panel{background:var(--surface);padding:1.5rem;border-left:8px solid var(--brand)}
+.panel.money{border-left-color:var(--sun)}
+.panel h3{font-size:1.5rem;margin-bottom:.6rem}
+.panel p{margin:0 0 .75rem;max-width:34rem}
+.panel p:last-child{margin-bottom:0}
+
+.find{background:var(--surface)}
+.address{font-family:"Bricolage Grotesque",Figtree,sans-serif;font-weight:600;font-size:clamp(1.4rem,5vw,2.1rem);line-height:1.25;margin:0 0 1rem}
+.find p{margin:0 0 .5rem;max-width:34rem;color:var(--muted)}
+.find .actions{margin-top:1.25rem}
+.find .btn.alt{color:var(--ink);border-color:var(--ink)}
+
+footer{padding:1.5rem 1.25rem 2rem;color:var(--muted);font-size:.95rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+
+<header class="sign">
+  <div class="wrap">
+    <h1>Mercy Retail Shoppers</h1>
+    <p class="where">Bison village, Western Division, Tororo District.</p>
+    <p class="promise">Shop for all kinds of merchandise and use our Airtel and MTN mobile money services, all in one place. We are open 24/7.</p>
+    <div class="actions" id="contact-hero"></div>
+    <p class="note" id="contact-note" hidden>Phone and WhatsApp buttons will appear here once the shop’s number is added.</p>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap">
+      <h2>What we offer</h2>
+      <div class="two">
+        <div class="panel">
+          <h3>Merchandise</h3>
+          <p>A retail shop stocked with all kinds of goods for your home and daily needs.</p>
+          <p>Visit the shop or call ahead to ask whether we have what you need.</p>
+        </div>
+        <div class="panel money">
+          <h3>Mobile money</h3>
+          <p>Airtel and MTN mobile money, with deposits and withdrawals, so you can shop and handle your money in one stop.</p>
+          <p>Open 24 hours a day, 7 days a week.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="find" id="find-us">
+    <div class="wrap">
+      <h2>Find us</h2>
+      <p class="address">Mercy Retail Shoppers<br>Bison village, Western Division<br>Tororo District</p>
+      <p>Open 24/7. Come to the shop in Bison village, or call 0782 874 052 to ask about an item or a service.</p>
+      <div class="actions" id="contact-find"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Mercy Retail Shoppers, Tororo District.</div>
+</footer>
+
+<script>
+  // Add the shop's numbers here, digits only with country code, e.g. "256700000000". Leave WHATSAPP empty until there is a WhatsApp number.
+  var PHONE = "256782874052";
+  var WHATSAPP = "";
+
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  function buttons(alt){
+    var html = "";
+    if (PHONE) html += '<a class="btn" href="tel:+' + PHONE + '">Call the shop</a>';
+    if (WHATSAPP) html += '<a class="btn' + (alt ? ' alt' : '') + '" href="https://wa.me/' + WHATSAPP + '">Message on WhatsApp</a>';
+    return html;
+  }
+  var hero = buttons(true), find = buttons(true);
+  document.getElementById("contact-hero").innerHTML = hero;
+  document.getElementById("contact-find").innerHTML = find;
+  if (!hero) { document.getElementById("contact-note").hidden = false; }
+</script>
+</body>
+</html>
